@@ -2,18 +2,20 @@ html,
 body {
     height: 100%;
     margin: 0;
-    display: flex;
-    flex-direction: column;
     background-color: #f8f9fa;
     font-family: 'Montserrat', sans-serif;
 }
 
 main {
     flex: 1;
+    padding-top: 120px; 
+    padding-bottom: 60px; 
 }
 
-header {
-    background-color: #f8f9fa;
+@media (max-width: 767px) {
+    header {
+        position: fixed; 
+    }
 }
 
 footer {
@@ -53,7 +55,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    flex-direction: column; 
 }
 
 h1,
