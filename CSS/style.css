@@ -1,38 +1,41 @@
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
-    background-color: #f8f9fa;
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; 
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 main {
-    flex: 1;
-    padding-top: 120px; 
+    flex-grow: 1; 
+    padding-top: 60px; 
     padding-bottom: 60px; 
 }
 
-@media (max-width: 767px) {
-    header {
-        position: fixed; 
-    }
-}
-
 footer {
+    width: 100%; 
     background-color: #f4f4f4;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .btn-custom-black {
     background-color: black;
     color: white;
-    border-color: black;
+    border-color: black; 
 }
 
-.btn-custom-black:hover,
-.btn-custom-black:focus {
+.btn-custom-black:hover, .btn-custom-black:focus { 
     background-color: black;
     color: white;
     border-color: black;
@@ -41,34 +44,12 @@ footer {
 .btn-custom-grey {
     background-color: grey;
     color: white;
-    border-color: grey;
+    border-color: grey; 
 }
 
-.btn-custom-grey:hover,
-.btn-custom-grey:focus {
+.btn-custom-grey:hover, .btn-custom-grey:focus { 
     background-color: grey;
     color: white;
     border-color: grey;
 }
 
-.center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    flex-direction: column; 
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.rounded-circle {
-    border-radius: 50%;
-}
