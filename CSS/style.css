@@ -1,0 +1,70 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-black {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-custom-black:hover,
+.btn-custom-black:focus {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.btn-custom-grey {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+.btn-custom-grey:hover,
+.btn-custom-grey:focus {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
